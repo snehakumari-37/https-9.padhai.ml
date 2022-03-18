@@ -24,7 +24,7 @@ if (!badRequest) {
       if(sub == books[i].webCode){break;}
     }
       if(end.length==1){end = '0'+ end;}
-      else if (end == 0) { end = "ps"};
+      if (end == 0) { end = "ps"};
     
     var full = base + books[i].subCode + end + '.pdf';
     window.location.replace(full);
